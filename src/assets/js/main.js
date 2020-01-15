@@ -1,4 +1,4 @@
-var stage = new createjs.Stage("main-canvas");
+var stage;
 
 var question;
 var paperBg;
@@ -67,32 +67,35 @@ function tick() {
 }
 
 var callback;
+var folderURL;
 
-export function init(cb) {
+export function init(cFactor) {
+    stage = new createjs.Stage("minigame-canvas");
     score = 0;
     click = 0;
 
-    callback = cb;
+    callback = cFactor.callback;
+    folderURL = cFactor.folderURL + "assets/";
 
-    rightIcon.src = "img/RightIcon.png";
-    rightIconGreen.src = "img/RightIcon_green.png";
-    rightIconRed.src = "img/RightIcon_red.png";
+    rightIcon.src = folderURL + "img/RightIcon.png";
+    rightIconGreen.src = folderURL + "img/RightIcon_green.png";
+    rightIconRed.src = folderURL + "img/RightIcon_red.png";
 
-    leftIcon.src = "img/WrongIcon.png";
-    leftIconGreen.src = "img/WrongIcon_green.png";
-    leftIconRed.src = "img/WrongIcon_red.png";
+    leftIcon.src = folderURL + "img/WrongIcon.png";
+    leftIconGreen.src = folderURL + "img/WrongIcon_green.png";
+    leftIconRed.src = folderURL + "img/WrongIcon_red.png";
 
-    buttonBg.src = "img/button_bg.png";
+    buttonBg.src = folderURL + "img/button_bg.png";
 
-    bgBubble.src = "img/background_bubble.png";
-    textBubble.src = "img/text_color_bubble.png";
-    questionBg.src = "img/quetion.png";
+    bgBubble.src = folderURL + "img/background_bubble.png";
+    textBubble.src = folderURL + "img/text_color_bubble.png";
+    questionBg.src =  folderURL + "img/quetion.png";
     // setTimeout(exit, timeout);
     stage.removeAllChildren();
     stage.update();
 
     var image = new Image();
-    image.src = "img/splash.png";
+    image.src = folderURL + "img/splash.png";
     image.onload = handleSplashImage;
 }
 
@@ -116,7 +119,7 @@ function handleSplashImage(event) {
         stage.update();
 
         var printer = new Image();
-        printer.src = "img/printer.png";
+        printer.src = folderURL + "img/printer.png";
         printer.onload = handleBgImage;
     }, 3000)
 }
@@ -317,15 +320,15 @@ function handleBgImage(event) {
     stage.update();
 
     var imageOk = new Image();
-    imageOk.src = "img/RightIcon.png";
+    imageOk.src = folderURL + "img/RightIcon.png";
     imageOk.onload = handleOkImage;
 
     var imageCancel = new Image();
-    imageCancel.src = "img/WrongIcon.png";
+    imageCancel.src = folderURL + "img/WrongIcon.png";
     imageCancel.onload = handleCancelImage;
 
     var imageScorebg = new Image();
-    imageScorebg.src = "img/score_bg.png";
+    imageScorebg.src = folderURL + "img/score_bg.png";
     imageScorebg.onload = handleHudBg;
 
     drawPage();
