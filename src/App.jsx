@@ -17,7 +17,7 @@ export default class App extends React.Component {
             let score;
             let click;
 
-            const colors = ['green', 'yellow', 'black', 'red', 'blue', 'cyan'];
+            const colors = ['green', 'yellow', 'black', 'red', 'blue'];
             const questions = ['Does the ^ match the word', 'Does the ^ match the word '];
             const choice = ['Success', 'Failure'];
             let timeout = 60000;
@@ -38,9 +38,10 @@ export default class App extends React.Component {
             const wrongIconRed = new Image();
 
             const buttonBg = new Image();
+            const playButton = new Image();
 
 
-            const width = 430;
+            const width = Math.min(430, window.innerWidth);
             const height = window.innerHeight;
 
             function getRandomChoice() {
@@ -85,7 +86,7 @@ export default class App extends React.Component {
                 click = 0;
 
                 callback = cFactor.callback;
-                folderURL =  "assets/colormatch/";
+                folderURL = "assets/colormatch/";
 
                 rightIcon.src = folderURL + "img/RightIcon.png";
                 rightIconGreen.src = folderURL + "img/RightIcon_green.png";
@@ -100,6 +101,8 @@ export default class App extends React.Component {
                 bgBubble.src = folderURL + "img/background_bubble.png";
                 textBubble.src = folderURL + "img/text_color_bubble.png";
                 questionBg.src = folderURL + "img/quetion.png";
+
+                playButton.src = folderURL + "img/play.png";
                 // setTimeout(exit, timeout);
                 stage.removeAllChildren();
                 stage.update();
@@ -120,18 +123,37 @@ export default class App extends React.Component {
 
                 setTimeout(function () {
                     stage.removeAllChildren();
-                    const bg = new createjs.Shape();
-                    bg.graphics.beginFill("#3c3230")
-                        .drawRect(0, 0, width, height)
-                        .endFill();
-
-                    stage.addChild(bg);
                     stage.update();
 
+                    const instructions = new Image();
+                    instructions.src = folderURL + "img/Instructions.png";
+                    instructions.onload = handleInstructionsImage;
+                }, 3000)
+            }
+
+            function handleInstructionsImage(event) {
+                const image = event.target;
+                const bmp = new createjs.Bitmap(image);
+                bmp.scaleX = width / bmp.getBounds().width;
+                bmp.scaleY = height / bmp.getBounds().height;
+
+                const playImage = new createjs.Bitmap(playButton);
+                playImage.scaleX = width / playImage.getBounds().width;
+                playImage.scaleY = height / playImage.getBounds().height;
+
+                playImage.y = height - 200;
+                playImage.x = width / 2 - (playImage.getBounds().width * playImage.scaleX) / 2;
+
+                stage.removeAllChildren();
+                stage.addChild(bmp);
+                stage.addChild(playImage);
+
+                playImage.addEventListener("click", function (event) {
                     const printer = new Image();
                     printer.src = folderURL + "img/printer.png";
                     printer.onload = handleBgImage;
-                }, 3000)
+                });
+                stage.update();
             }
 
             function exit() {
@@ -236,6 +258,9 @@ export default class App extends React.Component {
                         } else {
                             containerRight.addChild(bmpRed);
                             score -= 10;
+                            if (score <= 0) {
+                                score = 0;
+                            }
                         }
                     } else {
                         if (paperBg === fontText) {
@@ -244,6 +269,9 @@ export default class App extends React.Component {
                         } else {
                             containerRight.addChild(bmpRed);
                             score -= 10;
+                            if (score <= 0) {
+                                score = 0;
+                            }
                         }
                     }
                     scoreObj.text = "SCORE            " + score;
@@ -298,6 +326,9 @@ export default class App extends React.Component {
                         } else {
                             containerLeft.addChild(bmpRed);
                             score -= 10;
+                            if (score <= 0) {
+                                score = 0;
+                            }
                         }
                     } else {
                         if (paperBg !== fontText) {
@@ -306,6 +337,9 @@ export default class App extends React.Component {
                         } else {
                             containerLeft.addChild(bmpRed);
                             score -= 10;
+                            if (score <= 0) {
+                                score = 0;
+                            }
                         }
                     }
                     scoreObj.text = "SCORE            " + score;
@@ -324,6 +358,14 @@ export default class App extends React.Component {
                 btnBg.scaleX = width / btnBg.getBounds().width;
                 btnBg.y = height - btnBg.getBounds().height * width / btnBg.getBounds().width + 15;
 
+                stage.removeAllChildren();
+
+                const bg = new createjs.Shape();
+                bg.graphics.beginFill("#3c3230")
+                    .drawRect(0, 0, width, height)
+                    .endFill();
+
+                stage.addChild(bg);
                 stage.addChild(btnBg);
 
                 tick();

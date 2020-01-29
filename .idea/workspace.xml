@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b3e971-4ac8-429f-81eb-4d276179e02e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/img/play.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/RightIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/RightIcon_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/RightIcon_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/WrongIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/WrongIcon_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/WrongIcon_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/background_bubble.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/button_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/cancel_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/hud_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/ok_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/printer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/quetion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/score_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/text_color_bubble.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/wrong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundle-colormatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/printer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/printer.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="153">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="e#78#104#0" expanded="true" />
               </folding>
@@ -88,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-443">
-              <caret line="307" column="40" selection-start-line="307" selection-start-column="40" selection-end-line="307" selection-end-column="40" />
+            <state relative-caret-position="27">
+              <caret line="349" column="43" selection-start-line="349" selection-start-column="43" selection-end-line="349" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -97,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="1554">
               <caret line="74" column="14" selection-end-line="446" />
             </state>
           </provider>
@@ -114,12 +95,13 @@
       <find>twee</find>
       <find>tween</find>
       <find>createjs</find>
-      <find>exit</find>
       <find>&quot;img/</find>
       <find>&quot;img</find>
       <find>init</find>
       <find>export</find>
       <find>asset</find>
+      <find>callback</find>
+      <find>exit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,8 +120,8 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.jsx" />
       </list>
     </option>
@@ -147,7 +129,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="809" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,8 +137,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,16 +169,16 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/dist/assets" />
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -241,16 +223,30 @@
       <workItem from="1578936726780" duration="5463000" />
       <workItem from="1578947582161" duration="961000" />
       <workItem from="1578988392637" duration="237000" />
+      <workItem from="1579085019363" duration="412000" />
+      <workItem from="1579094774896" duration="1361000" />
+      <workItem from="1579104181987" duration="1978000" />
+      <workItem from="1580212959336" duration="1419000" />
+      <workItem from="1580284177687" duration="1525000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1579085047408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579085047408</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33624000" />
+    <option name="totallyTimeSpent" value="40319000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3018598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -264,7 +260,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.32952926" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.32855093" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32952926" />
       <window_info anchor="bottom" id="Regex Tester" order="10" />
@@ -285,6 +281,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/js/vendor/jquery-3.4.1.min.js" />
@@ -335,16 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#78#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -354,15 +344,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="1554">
           <caret line="74" column="14" selection-end-line="446" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#78#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="307" column="40" selection-start-line="307" selection-start-column="40" selection-end-line="307" selection-end-column="40" />
+        <state relative-caret-position="27">
+          <caret line="349" column="43" selection-start-line="349" selection-start-column="43" selection-end-line="349" selection-end-column="43" />
         </state>
       </provider>
     </entry>
